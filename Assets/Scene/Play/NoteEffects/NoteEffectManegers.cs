@@ -102,15 +102,38 @@ public class NoteEffectManegers : MonoBehaviour
         }
         else if (OnOff == true)
         {
-            if(this.gameObject.transform.position.z != -3)
+            if (this.gameObject.transform.position.z != -3)
+            {
                 Back.gameObject.SetActive(true);
+            }
+            else
+            {
+                Back.gameObject.SetActive(false);
+            }
             if (this.gameObject.transform.position.z != 3)
+            {
                 Before.gameObject.SetActive(true);
+            }
+            else
+            {
+                Before.gameObject.SetActive(false);
+            }
             if (this.gameObject.transform.position.x != -3)
+            {
                 Left.gameObject.SetActive(true);
+            }
+            else
+            {
+                Left.gameObject.SetActive(false);
+            }
             if (this.gameObject.transform.position.x != 3)
+            {
                 Right.gameObject.SetActive(true);
-
+            }
+            else
+            {
+                Right.gameObject.SetActive(false);
+            }
             Back.MoveEffectBack();
             Before.MoveEffectBefore();
             Left.MoveEffectLeft();
