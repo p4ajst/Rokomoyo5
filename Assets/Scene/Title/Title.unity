@@ -814,6 +814,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1746987627210830, guid: e88089f385782804fa0f9c9e902fe78d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e88089f385782804fa0f9c9e902fe78d, type: 2}
   m_IsPrefabParent: 0
@@ -1306,7 +1310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1653699422
 RectTransform:
   m_ObjectHideFlags: 0
