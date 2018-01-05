@@ -10,8 +10,8 @@ public class Goal : Trap {
     GameObject key;
     GameObject keyChild;
 
-    bool goalflag = false;
-    static int x = 2;
+    //bool goalflag = false;
+    //static int x = 2;
 
 	// Use this for initialization
 	override protected void Start () {
