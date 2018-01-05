@@ -142,6 +142,8 @@ public class NoteEffectManegers : MonoBehaviour
             Before.ResetEffect(transform.position);
             Left.ResetEffect(transform.position);
             Right.ResetEffect(transform.position);
+
+
             //Debug.Log("on");
         }
 
