@@ -28,16 +28,9 @@ public class NoteEffectLeft : MonoBehaviour
         transform.position = new Vector3(transform.position.x - move
   , 1.5f + (Mathf.Sin(Time.frameCount * Cycle) / tall), transform.position.z);
     }
-    public void MoveEffectLeftAttract(Vector3 positions)
-    {
-        transform.position = new Vector3(positions.x - 6.0f + move,
-            1.5f + (Mathf.Sin(Time.frameCount * Cycle) / tall), transform.position.z);
-    }
-
-
     public void ResetEffect(Vector3 positions)
     {
-        if (transform.position.x <=positions.x -6.0f)
+        if (transform.position.x <= -3.0f)
         {
             transform.position = positions;
         }
@@ -47,12 +40,6 @@ public class NoteEffectLeft : MonoBehaviour
     {
         transform.position = positions;
     }
-    public void ResetPosAttract(Vector3 positions)
-    {
-        if (transform.position.z == positions.z && transform.position.x == transform.position.x)
-        {
-            transform.position = new Vector3(positions.x-6.0f, positions.y, positions.z );
-        }
-    }
+
 }
 
