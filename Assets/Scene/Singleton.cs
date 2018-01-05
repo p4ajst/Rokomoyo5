@@ -33,6 +33,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
                 {
                     // エラーログを表示
                     Debug.LogError(typeof(T) + "is nothing");
+
                 }
             }
             // インスタンス
