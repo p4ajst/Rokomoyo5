@@ -27,9 +27,14 @@ public class NoteEffectBack : MonoBehaviour
         transform.position = new Vector3(transform.position.x
   , 1.5f + (Mathf.Sin(Time.frameCount * Cycle) / tall), transform.position.z - move);
     }
+    public void MoveEffectBackAttract(Vector3 positions)
+    {
+        transform.position = new Vector3(transform.position.x
+  , 1.5f + (Mathf.Sin(Time.frameCount * Cycle) / tall), positions.z - 6.0f + move);
+    }
     public void ResetEffect(Vector3 positions)
     {
-        if (transform.position.z <= -3.0f)
+        if (transform.position.z <=positions.z -6.0f)
         {
             transform.position = positions;
         }
@@ -38,6 +43,14 @@ public class NoteEffectBack : MonoBehaviour
     public void ResetPos(Vector3 positions)
     {
         transform.position = positions;
+    }
+
+    public void ResetPosAttract(Vector3 positions)
+    {
+        if (transform.position.z == positions.z&&transform.position.x==transform.position.x )
+        {
+            transform.position = new Vector3(positions.x, positions.y, positions.z - 6.0f);
+        }
     }
 }
 

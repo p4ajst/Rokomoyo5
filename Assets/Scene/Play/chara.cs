@@ -24,7 +24,8 @@ public class chara : MonoBehaviour {
     {
         
         moveing,
-        waiting
+        waiting,
+        stopping
     }
     status stauts;
 
@@ -36,7 +37,7 @@ public class chara : MonoBehaviour {
         RoteSpeed = 3.0f*2.5f;
         
         //PlayerPos = this.gameObject.transform.position;
-        a = 1;
+        a = 0;
         times = 1;
         round = true;
         DeltaTime = 0;
@@ -86,7 +87,8 @@ public class chara : MonoBehaviour {
                 }
                 
                 break;
-                
+            case (int)status.stopping:
+                break;
 
         }
 
@@ -256,6 +258,12 @@ public class chara : MonoBehaviour {
     {
         a = 1;
     }
+    //キャラを止める状態変化
+    public void MoveStop()
+    {
+        a = 3;
+    }
+
     //待機モーション
     void waitrotate()
     {

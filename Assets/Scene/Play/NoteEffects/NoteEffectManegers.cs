@@ -134,14 +134,28 @@ public class NoteEffectManegers : MonoBehaviour
             {
                 Right.gameObject.SetActive(false);
             }
-            Back.MoveEffectBack();
-            Before.MoveEffectBefore();
-            Left.MoveEffectLeft();
-            Right.MoveEffectRight();
-            Back.ResetEffect(transform.position);
-            Before.ResetEffect(transform.position);
-            Left.ResetEffect(transform.position);
-            Right.ResetEffect(transform.position);
+            //if(sound.nowPlay == Notes.MusicType.ATTRACT)
+            //{
+            //    Back.MoveEffectBackAttract(this.transform.position);
+            //    Before.MoveEffectBeforeAttract(this.transform.position);
+            //    Left.MoveEffectLeftAttract(this.transform.position);
+            //    Right.MoveEffectRightAttract(this.transform.position);
+            //    Back.ResetPosAttract(transform.position);
+            //    Before.ResetPosAttract(transform.position);
+            //    Left.ResetPosAttract(transform.position);
+            //    Right.ResetPosAttract(transform.position);
+            //}
+            //else if(sound.nowPlay == Notes.MusicType.AWAY)
+            {
+                Back.MoveEffectBack();
+                Before.MoveEffectBefore();
+                Left.MoveEffectLeft();
+                Right.MoveEffectRight();
+                Back.ResetEffect(transform.position);
+                Before.ResetEffect(transform.position);
+                Left.ResetEffect(transform.position);
+                Right.ResetEffect(transform.position);
+            }
             //Debug.Log("on");
         }
 
