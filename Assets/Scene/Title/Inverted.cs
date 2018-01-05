@@ -17,7 +17,8 @@ public class Inverted : MonoBehaviour {
         nverted.color = new Color(0.0f, 0f, 0f, 0.0f);
         invertednote1.color = new Color(255f, 255f, 255f, 0.0f);
         invertednote2.color = new Color(0.0f, 0f, 255f, 0.0f);
-
+        invertednote1.transform.position += new Vector3(50, 0, 0);
+        invertednote2.transform.position += new Vector3(-50, 0, 0);
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class Inverted : MonoBehaviour {
         }
         if (flag == true)
         {
-            if (invertednote2.transform.position.x <= 250)
+            if (invertednote2.transform.position.x <= 300)
             {
                 invertednote1.transform.position += new Vector3(-1, 0, 0);
                 invertednote2.transform.position += new Vector3(1, 0, 0);
@@ -43,8 +44,8 @@ public class Inverted : MonoBehaviour {
     public void invertedOff()
     {
         flag = false;
-        invertednote1.transform.position += new Vector3(150, 0, 0);
-        invertednote2.transform.position += new Vector3(-150, 0, 0);
+        invertednote1.transform.position += new Vector3(50, 0, 0);
+        invertednote2.transform.position += new Vector3(-50, 0, 0);
         nverted.color = new Color(0.0f, 0f, 0f, 0.0f);
         invertednote1.color = new Color(255f, 255f, 255f, 0.0f);
         invertednote2.color = new Color(0.0f, 0f, 255f, 0.0f);
