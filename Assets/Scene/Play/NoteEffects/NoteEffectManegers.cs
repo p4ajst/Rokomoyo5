@@ -134,6 +134,8 @@ public class NoteEffectManegers : MonoBehaviour
             {
                 Right.gameObject.SetActive(false);
             }
+
+
             Back.MoveEffectBack();
             Before.MoveEffectBefore();
             Left.MoveEffectLeft();
