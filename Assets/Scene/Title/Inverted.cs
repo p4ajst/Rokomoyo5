@@ -29,7 +29,7 @@ public class Inverted : MonoBehaviour {
         }
         if (flag == true)
         {
-            if (invertednote2.transform.position.x <= 300)
+            if (nverted.transform.position.x >= invertednote2.transform.position.x)
             {
                 invertednote1.transform.position += new Vector3(-1, 0, 0);
                 invertednote2.transform.position += new Vector3(1, 0, 0);

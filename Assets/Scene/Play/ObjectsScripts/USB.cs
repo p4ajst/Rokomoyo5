@@ -44,7 +44,7 @@ public class USB : Gimmick {
             effect = true;
             if (effect == true)
             {
-                Invoke("walpDownCoroutine2", 1.0f);
+                Invoke("walpDownCoroutine2", 0.25f);
                 walpUp(warpPoints[0]);
             }
             //プレイヤーを移動させる
@@ -59,7 +59,7 @@ public class USB : Gimmick {
             effect = true;
             if (effect == true)
             {
-                Invoke("walpDownCoroutine1", 1.0f);
+                Invoke("walpDownCoroutine1", 0.25f);
                 walpUp(warpPoints[1]);
             }
             //プレイヤーを移動させる

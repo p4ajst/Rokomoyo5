@@ -11,13 +11,12 @@ public class uGUIresize : Trap
     public ParticleSystem pe;
     public GameObject thunderParticle;        //パーティクル
     public Transform[] thunderPoints;         // 地点
-    float width, height;
+    static float  height;
+    static bool flag = false;
     // Use this for initialization
     void Start()
     {
-        width = 0;
         height = 0;
-        //pe.Stop();
     }
 
     // Update is called once per frame
@@ -36,16 +35,24 @@ public class uGUIresize : Trap
         }
 
         //if (Input.GetKey("down"))
-        {
-               height += 1;
-        }
-        if (height < 10)
-        {
-            rawImage.transform.localScale = new Vector3(
-            gameObject.transform.localScale.x + height,
-            gameObject.transform.localScale.y + height,
-            gameObject.transform.localScale.z + height);
-        }
+        //{
+        //       height += 1;
+        //}
+        //if (height < 10)
+        //{
+        //    rawImage.transform.localScale = new Vector3(
+        //    gameObject.transform.localScale.x - height,
+        //    gameObject.transform.localScale.y - height,
+        //    gameObject.transform.localScale.z - height);
+        //}
        
+    }
+    public bool GetFlag()
+    {
+        return flag;
+    }
+    public void OnFlag()
+    {
+        flag = true;
     }
 }

@@ -53,6 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warpParticle: {fileID: 1509881940159846, guid: 6e0169ec330bfc34aab6a7a1f309c2e9,
     type: 2}
+  warpParticleDown: {fileID: 1244447869986036, guid: 8d49e0233858fd0448c6913b0c2332ea,
+    type: 2}
   warpPoints:
   - {fileID: 0}
   - {fileID: 0}
