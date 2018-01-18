@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1869146117651256
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rawImage: {fileID: 1869146117651256}
   pe: {fileID: 198897832533983416}
-  thunderParticle: {fileID: 1576701179832402}
+  thunderParticle: {fileID: 1255748309562608, guid: 7d93fb718bd32e545821eec42a47a9ed,
+    type: 2}
   thunderPoints:
   - {fileID: 4771951831878212}
 --- !u!114 &114106578285525216
