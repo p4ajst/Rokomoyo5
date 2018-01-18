@@ -39,8 +39,8 @@ public class Patolian : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //roomba = GetComponent<chara>();
-        MoveSpeed = 1.0f;
-        RoteSpeed = 0.2f;
+        MoveSpeed = 2.5f;
+        RoteSpeed = 0.5f;
         newRoteVec = new Vector3();
         Roteflage = true;
 

@@ -32,8 +32,8 @@ public class chara : MonoBehaviour {
     void Start () {
         Charge = 100.0f;
 
-        MoveSpeed = 0.5f;
-        RoteSpeed = 3.0f*2.5f;
+        MoveSpeed = 1.2f;
+        RoteSpeed = 3.0f*1.7f;
         
         //PlayerPos = this.gameObject.transform.position;
         a = 1;
