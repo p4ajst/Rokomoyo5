@@ -13,24 +13,25 @@ public class USB : Gimmick {
 
     //パーティクルエフェクト
     public GameObject warpParticle;        //パーティクル
+    public GameObject warpParticleDown;        //パーティクル
     public Transform[] warpPoints;         // 地点
     bool effect;
     //多重に移動しないようにするフラグ
     bool flag = false;
 
     // Use this for initialization
-    override protected void Start () {
+    void Start () {
         base.Start();
         usbA = GameObject.Find("USB/USB");
         usbB = GameObject.Find("USB/USB (1)");
-
         usbA_pos = GameObject.Find("USB/USB");
         usbB_pos = GameObject.Find("USB/USB (1)");
         effect = false;
+        
     }
 	
 	// Update is called once per frame
-	override protected void Update () {
+	void Update () {
 
         base.Update();
 
@@ -41,7 +42,11 @@ public class USB : Gimmick {
             //移動したことを示す
             flag = true;
             effect = true;
-
+            if (effect == true)
+            {
+                Invoke("walpDownCoroutine2", 0.25f);
+                walpUp(warpPoints[0]);
+            }
             //プレイヤーを移動させる
             player.GetComponent<chara>().transform.position = new Vector3(usbB_pos.GetComponent<USBB>().transform.position.x, 0.6f, usbB_pos.GetComponent<USBB>().transform.position.z);
         }
@@ -52,30 +57,62 @@ public class USB : Gimmick {
             //移動したことを示す
             flag = true;
             effect = true;
-
+            if (effect == true)
+            {
+                Invoke("walpDownCoroutine1", 0.25f);
+                walpUp(warpPoints[1]);
+            }
             //プレイヤーを移動させる
             player.GetComponent<chara>().transform.position = new Vector3(usbA_pos.GetComponent<USBA>().transform.position.x, 0.6f, usbA_pos.GetComponent<USBA>().transform.position.z);
         }
-         if (effect == true)
-        { 
-            foreach (Transform explosionPos in warpPoints[0])
-            {
-                GameObject warp = Instantiate(warpParticle,               // パーティクルオブジェクトの生成
-                    explosionPos.position, transform.rotation) as GameObject;
-                Destroy(warp, 1f);                                             // 3秒後に消す
-            }
-            foreach (Transform explosionPos in warpPoints[1])
-            {
-                GameObject warp = Instantiate(warpParticle,               // パーティクルオブジェクトの生成
-                    explosionPos.position, transform.rotation) as GameObject;
-                Destroy(warp, 1f);                                             // 3秒後に消す
-            }
-        }
+      //  walpDownCoroutine1();
         //どちらも踏んでない状態になったら
         if (!usbA.GetComponent<USBA>().GetFlagA() && !usbB.GetComponent<USBB>().GetFlagB())
             //多重移動のフラグを消す
             flag = false;
             effect = false;
+    }
 
+    private void walpUp(Transform pos)
+    {
+        foreach (Transform explosionPos in pos)
+        {
+            GameObject warp = Instantiate(warpParticle,               // パーティクルオブジェクトの生成
+                explosionPos.position, transform.rotation) as GameObject;
+            Destroy(warp, 1f);                                             // 3秒後に消す
+        }
+    }
+    private void walpdown(Transform pos)
+    {
+        
+        foreach (Transform explosionPos in pos)
+        {
+            GameObject warp = Instantiate(warpParticleDown,               // パーティクルオブジェクトの生成
+                explosionPos.position, transform.rotation) as GameObject;
+            Destroy(warp, 1f);                                             // 3秒後に消す
+        }
+    }
+    private void walpDownCoroutine1()
+    {
+        Transform pos;
+        pos = warpPoints[0];
+        foreach (Transform explosionPos in pos)
+        {
+            GameObject warp = Instantiate(warpParticleDown,               // パーティクルオブジェクトの生成
+                explosionPos.position, transform.rotation) as GameObject;
+            Destroy(warp, 1f);                                             // 3秒後に消す
+        }
+    }
+    private void walpDownCoroutine2()
+    {
+        Transform pos;
+        pos = warpPoints[1];
+        
+        foreach (Transform explosionPos in pos)
+        {
+            GameObject warp = Instantiate(warpParticleDown,               // パーティクルオブジェクトの生成
+                explosionPos.position, transform.rotation) as GameObject;
+            Destroy(warp, 1f);                                             // 3秒後に消す
+        }
     }
 }
