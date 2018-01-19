@@ -232,7 +232,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1686381727007480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8, y: 3.05, z: 2.71}
+  m_LocalPosition: {x: 2.22, y: 3.05, z: 1.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4416088719019548}
@@ -259,8 +259,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190767501730728}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: -3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4414317313746136}
@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0ea2a7bc92b6f45ab3dab117891877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thunderParticle: {fileID: 1808444300824428, guid: 0cd509e1377c3b948be97ee752afdd29,
+  thunderParticle: {fileID: 1958344049968318, guid: 6323b579a85e07940863fbd265a0d55c,
     type: 2}
   thunderPoints:
   - {fileID: 4320707479997266}

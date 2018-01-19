@@ -3109,66 +3109,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -169.99292
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -138.46106
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 480
-      objectReference: {fileID: 0}
-    - target: {fileID: 223307518112653576, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114270817529720812, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_UiScaleMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434810547834788, guid: e976fa0048f7b804e9449d80e06f31b6,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 480
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e976fa0048f7b804e9449d80e06f31b6, type: 2}
   m_IsPrefabParent: 0
