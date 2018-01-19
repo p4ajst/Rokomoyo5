@@ -3462,6 +3462,11 @@ Prefab:
       propertyPath: move_type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114741585636867392, guid: f7237eae5f401f74eaf144d1571c4ddf,
+        type: 2}
+      propertyPath: waitTime
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7237eae5f401f74eaf144d1571c4ddf, type: 2}
   m_IsPrefabParent: 0

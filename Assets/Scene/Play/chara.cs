@@ -7,7 +7,7 @@ public class chara : MonoBehaviour {
    //電池残量
     public　float Charge;
     //移動速度
-    float MoveSpeed;
+  public float MoveSpeed;
     //回転速度
     float RoteSpeed;
     //移動する長さ
