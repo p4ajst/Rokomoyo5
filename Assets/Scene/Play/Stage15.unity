@@ -4502,9 +4502,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1190767501730728, guid: e2ba99123e907b24d93314961debbf0c, type: 2}
-      propertyPath: m_Name
-      value: microUSB_C
+    - target: {fileID: 114426844066912680, guid: e2ba99123e907b24d93314961debbf0c,
+        type: 2}
+      propertyPath: thunderParticle
+      value: 
+      objectReference: {fileID: 1958344049968318, guid: 6323b579a85e07940863fbd265a0d55c,
+        type: 2}
+    - target: {fileID: 4320707479997266, guid: e2ba99123e907b24d93314961debbf0c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.15
       objectReference: {fileID: 0}
     - target: {fileID: 4320707479997266, guid: e2ba99123e907b24d93314961debbf0c, type: 2}
       propertyPath: m_LocalPosition.x
