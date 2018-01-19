@@ -24,7 +24,8 @@ public class chara : MonoBehaviour {
     {
         
         moveing,
-        waiting
+        waiting,
+        stopping
     }
     status stauts;
 
@@ -86,7 +87,9 @@ public class chara : MonoBehaviour {
                 }
                 
                 break;
-                
+            case (int)status.stopping:
+                break;
+
 
         }
 
@@ -256,6 +259,11 @@ public class chara : MonoBehaviour {
     {
         a = 1;
     }
+    public void Movestop()
+    {
+        a = 2;
+    }
+
     //待機モーション
     void waitrotate()
     {
