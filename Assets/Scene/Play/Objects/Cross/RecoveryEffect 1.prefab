@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 198834399861047370}
   - component: {fileID: 199865466700474820}
   m_Layer: 0
-  m_Name: RecoveryEffect
+  m_Name: RecoveryEffect 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,13 +82,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1003846037866908}
-<<<<<<< HEAD
-  m_LocalRotation: {x: 0.055235863, y: 0.726819, z: -0.6834368, w: -0.039968513}
-  m_LocalPosition: {x: 0.01, y: -0, z: -3.9}
-=======
-  m_LocalRotation: {x: 0.055235814, y: 0.7268189, z: -0.68343675, w: -0.03996851}
+  m_LocalRotation: {x: 0.055235818, y: 0.726819, z: -0.6834368, w: -0.039968513}
   m_LocalPosition: {x: 0, y: 1, z: 0}
->>>>>>> 4425ca6744681f5e24172f7d4583fc1217d73825
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 4763815973217740}
@@ -3581,11 +3576,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-<<<<<<< HEAD
-      scalar: 0.1
-=======
       scalar: 0.15
->>>>>>> 4425ca6744681f5e24172f7d4583fc1217d73825
       minScalar: 1
       maxCurve:
         serializedVersion: 2

@@ -1206,6 +1206,11 @@ Prefab:
       propertyPath: m_Name
       value: LowBattery (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 224204126170303390, guid: c989d786d54be644caa1e276575619ef,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c989d786d54be644caa1e276575619ef, type: 2}
   m_IsPrefabParent: 0
