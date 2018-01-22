@@ -34,10 +34,10 @@ public class Trap : MonoBehaviour{
         pos_z = player.transform.position.z;
 
         //当たり判定を取る
-        if (gameObject.transform.position.x - 0.25 < pos_x + 0.25 &&
-            gameObject.transform.position.x + 0.25 > pos_x - 0.25 &&
-            gameObject.transform.position.z - 0.25 < pos_z + 0.25 &&
-            gameObject.transform.position.z + 0.25 > pos_z - 0.25)
+        if (gameObject.transform.position.x - 0.2 < pos_x + 0.2 &&
+            gameObject.transform.position.x + 0.2 > pos_x - 0.2 &&
+            gameObject.transform.position.z - 0.2 < pos_z + 0.2 &&
+            gameObject.transform.position.z + 0.2 > pos_z - 0.2)
         {
             //当たっていたらtrueを返す
             return true;

@@ -13,7 +13,7 @@ public class NoteEffectLeft : MonoBehaviour
     void Start()
     {
         Cycle = 0.1f;
-        move = 0.02f;
+        move = 0.01f;
         tall = 4.0f;
         pos = this.gameObject.transform.position;
     }
