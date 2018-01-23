@@ -30,7 +30,7 @@ public class uGUIresize : Trap
             {
                 GameObject thunder = Instantiate (thunderParticle,               // パーティクルオブジェクトの生成
                     explosionPos.position, transform.rotation) as GameObject;
-                Destroy(thunder, 3f);                                             // 3秒後に消す
+                Destroy(thunder, 0.1f);                                             // 3秒後に消す
             }
         }
 
