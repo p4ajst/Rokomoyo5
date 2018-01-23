@@ -5488,6 +5488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Charge: 0
+  MoveSpeed: 0
   a: 0
 --- !u!23 &1488592459
 MeshRenderer:
