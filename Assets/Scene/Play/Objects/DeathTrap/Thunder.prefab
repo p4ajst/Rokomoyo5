@@ -496,7 +496,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 100
+    maxNumParticles: 10000
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -660,7 +660,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1000
+      scalar: 7000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -742,8 +742,8 @@ ParticleSystem:
     m_BurstCount: 1
     m_Bursts:
     - time: 1
-      minCount: 300
-      maxCount: 300
+      minCount: 1000
+      maxCount: 1000
       cycleCount: 1
       repeatInterval: 0.01
   SizeModule:
