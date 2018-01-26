@@ -7,6 +7,7 @@ public class MoveCamera : MonoBehaviour {
     GameObject cameraObj;
     bool rightFlag = false;
     bool leftFlag = false;
+    bool centerFlag = false;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,28 @@ public class MoveCamera : MonoBehaviour {
             cameraObj.transform.Rotate(new Vector3(0, -0.5f, 0));
         if (leftFlag)
             cameraObj.transform.Rotate(new Vector3(0, 0.5f, 0));
+
+        if(centerFlag)
+        {
+            if (cameraObj.transform.rotation.y > 0)
+            {
+                cameraObj.transform.Rotate(new Vector3(0, -1f, 0));
+                if (cameraObj.transform.rotation.y <= 0)
+                {
+                    cameraObj.transform.Rotate(new Vector3(0, 0, 0));
+                    centerFlag = false;
+                }
+            }
+            if (cameraObj.transform.rotation.y < 0)
+            {
+                cameraObj.transform.Rotate(new Vector3(0, 1f, 0));
+                if (cameraObj.transform.rotation.y >= 0)
+                {
+                    cameraObj.transform.Rotate(new Vector3(0, 0, 0));
+                    centerFlag = false;
+                }
+            }
+        }
     }
 
     public void RightClick()
@@ -30,6 +53,12 @@ public class MoveCamera : MonoBehaviour {
     public void LeftClick()
     {
         leftFlag = true;
+    }
+
+    public void CenterClick()
+    {
+        Debug.Log(cameraObj.transform.rotation.y);
+        centerFlag = true;
     }
 
     public void NoneClick()
