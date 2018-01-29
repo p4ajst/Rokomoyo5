@@ -32,8 +32,9 @@ public class chara : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Charge = 100.0f;
-
+        //キャラのスピード(数値が大きいほど遅い)
         MoveSpeed = 1.2f;
+        //キャラの回転速度(数値が大きいほど遅い)
         RoteSpeed = 3.0f*1.7f;
         
         //PlayerPos = this.gameObject.transform.position;
