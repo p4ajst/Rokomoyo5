@@ -124,6 +124,29 @@ ModelImporter:
     4300040: Code
     4300042: Hose004
     4300044: MiniStereoPlug
+    6400000: Body
+    6400002: Box003
+    6400004: Box004
+    6400006: Code
+    6400008: Code 1
+    6400010: Code 2
+    6400012: Code 3
+    6400014: Cylinder006
+    6400016: Hose001
+    6400018: Hose002
+    6400020: Hose003
+    6400022: Hose004
+    6400024: LensBody
+    6400026: LensFrams
+    6400028: MicroUSB
+    6400030: MiniStereoPlug
+    6400032: OutletPlug
+    6400034: Runba
+    6400036: Tire
+    6400038: Tire 1
+    6400040: Tire 2
+    6400042: Tire 3
+    6400044: USB
     7400000: Take 001
     9500000: //RootNode
   materials:
@@ -155,7 +178,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
