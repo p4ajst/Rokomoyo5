@@ -14,9 +14,12 @@ public class Key : Trap {
     // Update is called once per frame
     override protected void Update () {
         base.Update();
+        //鍵に触れたら
         if (OnFloor())
+            //オブジェクトを非表示にする
             gameObject.SetActive(false);
 
+        //オブジェクトを回転させ続ける（分かりやすくするため）
         gameObject.transform.Rotate(new Vector3(0, -1, 0));
     }
 }

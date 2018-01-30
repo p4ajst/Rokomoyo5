@@ -11,7 +11,6 @@ public class MoveCamera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        //cameraObj = GameObject.Find("Camera/Main Camera");
         cameraObj = GameObject.Find("Camera");
 	}
 	
@@ -24,7 +23,8 @@ public class MoveCamera : MonoBehaviour {
 
         if(centerFlag)
         {
-            if (cameraObj.transform.rotation.y > 0)
+            //if (cameraObj.transform.rotation.y > 0)
+            if(cameraObj.transform.rotation.y>0&& cameraObj.transform.rotation.y<180)
             {
                 cameraObj.transform.Rotate(new Vector3(0, -1f, 0));
                 if (cameraObj.transform.rotation.y <= 0)

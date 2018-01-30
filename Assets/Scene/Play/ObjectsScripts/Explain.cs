@@ -14,8 +14,10 @@ public class Explain: MonoBehaviour {
 		
 	}
 
+    //クリックされたら
     public void OnClick()
     {
+        //オブジェクトを非表示にする
         gameObject.SetActive(false);
     }
 }

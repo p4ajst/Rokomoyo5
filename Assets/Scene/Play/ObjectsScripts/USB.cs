@@ -20,7 +20,7 @@ public class USB : Gimmick {
     bool flag = false;
 
     // Use this for initialization
-    void Start () {
+    override protected void Start () {
         base.Start();
         usbA = GameObject.Find("USB/USB");
         usbB = GameObject.Find("USB/USB (1)");
@@ -31,7 +31,7 @@ public class USB : Gimmick {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	override protected void Update () {
 
         base.Update();
 

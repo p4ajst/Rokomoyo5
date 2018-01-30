@@ -10,9 +10,6 @@ public class Goal : Trap {
     GameObject key;
     GameObject keyChild;
 
-    bool goalflag = false;
-    static int x = 2;
-
 	// Use this for initialization
 	override protected void Start () {
         //基底クラスのStart関数
@@ -51,6 +48,7 @@ public class Goal : Trap {
                 //プレイヤーとゴールの位置が噛み合ったらシーン遷移
                 if (player.transform.position == new Vector3(gameObject.transform.position.x, player.transform.position.y, gameObject.transform.position.z))
                 {
+                    player.SetActive(false);
                     Stage.ChangeStage();
                     //player.transform.position = new Vector3(0.0f,0.0f,0.0f);
                 }
