@@ -10,12 +10,13 @@ public class Goal : Trap {
     GameObject key;
     GameObject keyChild;
 
-	// Use this for initialization
-	override protected void Start () {
+                                              // Use this for initialization
+    override protected void Start () {
         //基底クラスのStart関数
         base.Start();
         key = GameObject.Find("Key");
         keyChild = key.transform.Find("key").gameObject;
+
     }
 
     // Update is called once per frame
@@ -39,6 +40,7 @@ public class Goal : Trap {
                 microUSB.SetFlag(false);
                 StereoPlug.SetStereoFlag(false);
 
+       
                 //ゴールした瞬間にリープでゴールへ動く
                 float MoveTime = Time.deltaTime / 0.5f*2;
                 float Length = Vector3.Distance(player.transform.position,new Vector3(gameObject.transform.position.x, player.transform.position.y, gameObject.transform.position.z));
@@ -48,6 +50,7 @@ public class Goal : Trap {
                 //プレイヤーとゴールの位置が噛み合ったらシーン遷移
                 if (player.transform.position == new Vector3(gameObject.transform.position.x, player.transform.position.y, gameObject.transform.position.z))
                 {
+               
                     player.SetActive(false);
                     Stage.ChangeStage();
                     //player.transform.position = new Vector3(0.0f,0.0f,0.0f);
