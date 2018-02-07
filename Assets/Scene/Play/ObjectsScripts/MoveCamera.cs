@@ -24,25 +24,30 @@ public class MoveCamera : MonoBehaviour {
         if(centerFlag)
         {
             //if (cameraObj.transform.rotation.y > 0)
-            if(cameraObj.transform.rotation.y>0&& cameraObj.transform.rotation.y<180)
-            {
-                cameraObj.transform.Rotate(new Vector3(0, -1f, 0));
-                if (cameraObj.transform.rotation.y <= 0)
-                {
-                    cameraObj.transform.Rotate(new Vector3(0, 0, 0));
-                    centerFlag = false;
-                }
-            }
-            if (cameraObj.transform.rotation.y < 0)
-            {
-                cameraObj.transform.Rotate(new Vector3(0, 1f, 0));
-                if (cameraObj.transform.rotation.y >= 0)
-                {
-                    cameraObj.transform.Rotate(new Vector3(0, 0, 0));
-                    centerFlag = false;
-                }
-            }
+            ////if(cameraObj.transform.rotation.eulerAngles.y>=0&& cameraObj.transform.rotation.eulerAngles.y<=180)
+            //{
+            //    cameraObj.transform.Rotate(new Vector3(0, -1f, 0));
+            //    if (cameraObj.transform.rotation.y <= 0)
+            //    {
+            //        cameraObj.transform.Rotate(new Vector3(0, 0, 0));
+            //        centerFlag = false;
+            //    }
+            //}
+            //if (cameraObj.transform.rotation.y < 0)
+            ////if (cameraObj.transform.rotation.eulerAngles.y > 180 && cameraObj.transform.rotation.eulerAngles.y >= 360)
+            //{
+            //    cameraObj.transform.Rotate(new Vector3(0, 1f, 0));
+            //    if (cameraObj.transform.rotation.y >= 0)
+            //    {
+            //        cameraObj.transform.Rotate(new Vector3(0, 0, 0));
+            //        centerFlag = false;
+            //    }
+            //}
+            cameraObj.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+            centerFlag = false;
         }
+        //Debug.Log(cameraObj.transform.rotation.eulerAngles.y);
+        //Debug.Log(cameraObj.transform.rotation.y);
     }
 
     public void RightClick()
@@ -57,7 +62,7 @@ public class MoveCamera : MonoBehaviour {
 
     public void CenterClick()
     {
-        Debug.Log(cameraObj.transform.rotation.y);
+        //Debug.Log(cameraObj.transform.rotation.y);
         centerFlag = true;
     }
 
